@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-yellow-100 m-0 p-8 w-[100%] h-[100vh] mx-auto text-center flex justify-center items-center  ">
+       <div class="bg-slate-200 p-10 rounded-[28px]">
+        <h1 class="font-bold sm:text-[40px] text-[30px]">Account Login</h1>
+        <p class="sm:text-[17px] text-[12px]">Hey, Enter your details to get sign in your Account</p>
+
+        <form action="login" method="get" class="max-w-[400px] w-full mx-auto grid grid-cols-1">
+            <input type="email" name="signinemail" placeholder="Enter email" class="border-[3px] border-[#ccc] text-[black]  sm:mt-[25px] mt-[8px] rounded-[8px] sm:text-[20px] text-[12px]  sm:h-[50px] h-[30px] pl-[15px]" required><br>
+            <input type="password" name="signinpassword" placeholder="Enter password" class="border-[3px] border-[#ccc] text-[black]  sm:mt-[25px] rounded-[8px] sm:text-[20px]] sm:h-[50px] h-[30px] pl-[15px]" autocomplete="current-password" required><br>
+            <p class="text-red-700 sm:text-[10px] text-[9px] text-left">Password contain atleast one [0-9],[a-z], [! @ # & ( )], minlength 8 and maxlength 20  .</p>
+            <button type="login" class="border-[3px] border-[#ccc] rounded-[8px] bg-yellow-400 text-[20px] hover:bg-yellow-700 sm:h-[50px] h-[35px] pl-[15px] mt-[25px]  my-[5px]">Sign In</button>
+            <a href="sign_up.html" class="hover:text-[blue] hover:underline-offset-1">Sign Up</a>
+        </form>
+       </div>
+    </div>
+</body>
+</html>
